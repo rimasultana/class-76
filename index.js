@@ -14,4 +14,4 @@ firstName: "Mobasshir",
 lastName: "Khondhoker"
 };
 
-console.log( person.fullName.call(person1 + person2));
+console.log( person.fullName.apply(person2));
