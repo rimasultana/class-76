@@ -1,6 +1,6 @@
 const person = {
-    fullName : function(){
-        return this.firstName + " " + this.lastName;
+    fullName : function(city, country){
+        return this.firstName + " " + this.lastName + city + country;
     }
 };
 
@@ -14,4 +14,4 @@ firstName: "Mobasshir",
 lastName: "Khondhoker"
 };
 
-console.log( person.fullName.apply(person2));
+console.log( person.fullName.apply(person2, ["Dhaka", "Bangladesh"]));
